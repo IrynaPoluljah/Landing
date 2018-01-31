@@ -1,0 +1,28 @@
+.c-button {
+  letter-spacing: .2em;
+  text-transform: uppercase;
+  border-radius: 2px;
+  display: inline-block;
+  font-size: 14px;
+  padding: 14px 30px;
+  background-color: $greyLight;
+  color: $black;
+    &:hover {
+      background-color: $greyDark;
+      color: $white;
+    }
+}
+
+.c-button--small {
+  font-size: 11px;
+  background-color: $greyLight;
+  padding: 9px 15px;
+  color: $grey;
+}
+
+.c-button_dark {
+  background-color: $blackMd;
+  color: $white;
+  font-size: 13px;
+  padding: 12px 20px;
+}

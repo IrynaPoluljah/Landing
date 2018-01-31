@@ -1,0 +1,117 @@
+.l-section__carousel {
+  background-color: $black;
+  position: relative;
+  overflow: hidden;
+}
+
+.l-section.l-section__carousel {
+  padding: 0;
+}
+
+.carousel {
+  padding: 140px 20px 105px;
+}
+
+.l-section__carousel .carousel-caption {
+  position: static;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.carousel-caption .c-title--section {
+  margin-bottom: 45px;
+}
+
+.l-carousel__text {
+  color: $whiteOpasity;
+  font-size: 18px;
+  line-height: 1.7em;
+  max-width: 750px;
+  padding-bottom: 25px;
+  margin: 0 auto;
+}
+
+.l-carousel__author {
+  font-size: 11px;
+  font-weight: $fontRegular;
+  text-transform: uppercase;
+  color: rgba(255,255,255,.3);
+  letter-spacing: $LetterSpacXs;
+}
+
+.carousel-indicators li {
+  height: 9px;
+  width: 9px;
+  background-color: $grey;
+  border: 2px solid transparent;
+  vertical-align: middle;
+}
+
+
+.carousel-indicators .active {
+  height: 9px;
+  width: 9px;
+  background-color: transparent;
+  border: 2px solid $grey;
+}
+
+.carousel-control {
+  background: none;
+  opacity: 1;
+  width: 85px;
+  text-shadow: none;
+}
+
+.carousel-control:hover {
+  opacity: 1;
+}
+
+.carousel-control::before {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 85px;
+  width: 85px;
+  background: $white;
+  top: 50%;
+  left: -50%;
+  transform: translateY(-50%) rotate(45deg);
+}
+
+.carousel-control.right::before {
+  left: auto;
+  right: -50%;
+}
+
+.carousel-control.right i.fa {
+  left: auto;
+  right: 20px;
+}
+
+.carousel-control i.fa {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: $black;
+  left: 20px;
+}
+
+@media(max-width: 767px) {
+  .carousel-control {
+    display: none;
+  }
+}
+
+@media(max-width: 479px) {
+  .carousel {
+    padding: 60px 10px 40px;
+  }
+
+  .l-carousel__text {
+    font-size: 14px;
+  }
+
+  .l-carousel__author {
+    font-size: 10px;
+  }
+}

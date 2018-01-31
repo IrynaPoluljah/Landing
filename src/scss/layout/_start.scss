@@ -1,0 +1,10 @@
+.l-section__center {
+  @include flex;
+  @include column;
+  @include align-center;
+  @include center;
+}
+
+.l-section__center>div {
+  text-align: center;
+}

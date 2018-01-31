@@ -1,0 +1,15 @@
+.c-advantage {
+  text-align: center;
+  margin-bottom: $indentXs;
+}
+
+.c-advantage__content {
+  font-size: $fontSizeMd;
+  line-height: 1.8em;
+}
+
+@media(max-width: 767px) {
+  .c-advantage {
+    margin-bottom: $indentXXs;
+  }
+}

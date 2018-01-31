@@ -1,0 +1,78 @@
+.c-contact {
+  @include flex;
+  @include align-center;
+  padding-left: 5px;
+}
+
+.c-contact__icon {
+  width: 27px;
+  height: 25px;
+  background-color: $black;
+  border-radius: 2px;
+  transform: rotate(45deg);
+  margin-right: 15px;
+}
+
+.c-contact__text span{
+  display: block;
+}
+
+.c-contact__text span + span {
+  margin-top: 15px;
+}
+
+.c-contact__name {
+  font-size: 12px;
+  color: $grey;
+  letter-spacing: $letterSpacSm;
+}
+
+.c-contact__icon .fa {
+  position: absolute;
+  font-size: 16px;
+  color: $white;
+  top: 41%;
+  left: 11px;
+  transform: rotate(-45deg) translateY(-50%);
+}
+
+@media(max-width: 767px) {
+  .c-contact {
+    @include start;
+    margin-bottom: $indentXXs;
+    padding-left: 0;
+  }
+
+  .c-contact__icon {
+    margin-right: 0;
+  }
+
+  .c-contact__text {
+    margin-left: 30px;
+  }
+
+  .c-contact__text span {
+    display: inline-block;
+  }
+
+  .c-contact__text span + span {
+    margin-left: 15px;
+    margin-top: 0;
+  }
+}
+
+@media(max-width: 599px) {
+  .c-contact__data {
+    font-size: 11px;
+  }
+}
+
+@media(max-width: 479px) {
+  .c-contact__data {
+    font-size: 9px;
+  }
+
+  .c-contact__text {
+    margin-left: 18px;
+  }
+}

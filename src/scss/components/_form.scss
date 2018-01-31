@@ -1,0 +1,84 @@
+.c-form {
+  @include flex;
+}
+
+.c-form--small {
+  @include center;
+  font-weight: $fontRegular;
+  margin-bottom: $indentXXs;
+}
+
+.c-form__comment {
+  font-size: 11px;
+  color: $greyLight;
+  text-align: center;
+}
+
+.c-form--contact {
+  @include flex;
+  @include space-between;
+  margin-bottom: $indentXXs;
+  margin-top: $indentXs;
+}
+
+.c-form__col {
+  width: 50%;
+}
+
+.c-form__col + .c-form__col {
+  margin-left: 10px;
+}
+
+.c-form__group + .c-form__group {
+  margin-top: 10px;
+}
+
+.c-form__textarea {
+  width: 100%;
+  height: 100%;
+  resize: vertical;
+  min-height: 72px;
+}
+
+.c-form__submit {
+  @include flex;
+  @include space-between;
+  @include align-baseline;
+}
+
+@media(max-width: 767px) {
+  .c-form--contact {
+    margin-top: 20px;
+  }
+}
+
+@media(max-width: 599px) {
+  .c-form--contact {
+    @include wrap;
+  }
+
+  .c-form__col {
+    width: 100%;
+  }
+
+  .c-form__col + .c-form__col {
+    margin-top: 10px;
+    margin-left: 0;
+  }
+
+  .c-form__submit {
+    @include center;
+    @include wrap;
+  }
+
+  .c-form__submit .c-form__comment {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+
+@media(max-width: 479px) {
+  .c-form--small {
+    flex-wrap: wrap;
+  }
+}

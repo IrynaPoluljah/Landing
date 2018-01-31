@@ -1,0 +1,49 @@
+.l-section--topindent .l-section--text {
+  text-align: center;
+}
+
+.tab-content__photo::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(255,255,255,.85);
+  opacity: 0;
+  z-index: 4;  
+  transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);  
+}
+
+.tab-content__item:hover {
+  & .tab-content__info {
+    opacity: 1;
+    z-index: 6;
+  }
+
+  & .tab-content__photo::after {
+    opacity: 1;
+  }
+}
+
+.tab-content__info {
+  color: $black;
+  position: absolute;
+  text-align: center;
+  font-size: 12px;
+  font-family: $fontSecond;
+  font-weight: $fontLight;
+  line-height: 2em;
+  text-transform: uppercase;
+  letter-spacing: $LetterSpacXs;  
+  bottom: 40px;
+  right: 50%;
+  transform: translateX(50%);
+  opacity: 0;
+  transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);  
+}
+
+.tab-content__info--big {
+  font-size: 14px;
+  letter-spacing: $letterSpacSm;
+}

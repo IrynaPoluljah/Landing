@@ -1,0 +1,33 @@
+.c-input {
+  border: 1px solid $greyXs;
+  box-shadow: none;
+  text-transform: uppercase;
+  font-size: 12px;
+  padding: 6px 12px;
+  letter-spacing: $LetterSpacXs;
+  color: $grey;
+  border-radius: 2px;
+}
+
+.c-input--fixed {
+  height: 37px;
+  width: 240px;
+  margin-right: 3px;  
+}
+
+.c-input--wide {
+  width: 100%;
+  height: 100%;
+}
+
+@media(max-width: 479px) {
+  .c-input--fixed {
+    width: 100%;
+    margin-bottom: $indentXXs;
+  }
+
+  .c-input__wrap {
+    width: 100%;
+    text-align: center;
+  }
+}

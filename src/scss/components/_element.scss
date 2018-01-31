@@ -1,0 +1,21 @@
+.c-tab .c-element {
+  @include flex;
+  @include column;
+  @include align-center;
+  text-align: center;
+}
+
+.c-element>span {
+  color: rgba(0,0,0, .4);
+}
+
+.c-advantage .c-element {
+  color: $black;
+  margin-bottom: 35px;
+}
+
+@media(max-width: 767px) {
+  .c-advantage .c-element {
+    margin-bottom: $indentXXs;
+  }
+}

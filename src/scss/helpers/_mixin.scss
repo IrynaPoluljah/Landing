@@ -1,0 +1,46 @@
+@mixin flex {
+  display: flex;
+}
+
+@mixin space-between {
+  justify-content: space-between;
+}
+
+@mixin space-around {
+  justify-content: space-around;
+}
+
+@mixin center {
+  justify-content: center;
+}
+
+@mixin end {
+  justify-content: flex-end;
+}
+
+@mixin start {
+  justify-content: flex-start;
+}
+
+@mixin align-center {
+  align-items: center;
+}
+
+@mixin align-baseline {
+  align-items: baseline;
+}
+
+@mixin column {
+  flex-direction: column;
+}
+
+@mixin wrap {
+  flex-wrap: wrap;
+}
+
+@mixin c-title {
+  font-family: $fontSecond;
+  font-weight: $fontRegular;
+  text-transform: uppercase;
+  color: $black;
+}

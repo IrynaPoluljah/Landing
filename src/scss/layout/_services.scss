@@ -1,0 +1,8 @@
+@media(max-width: 599px) {
+  .l-section__services ul {
+    @include flex;
+    @include center;
+    @include wrap;
+    margin-bottom: 30px;
+  }
+}

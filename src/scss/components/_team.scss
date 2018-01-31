@@ -1,0 +1,98 @@
+.c-team__wrap {
+  @include flex;
+  @include center;
+}
+
+.c-team {
+  text-align: center;
+    &:hover {
+    .c-team__details {
+      opacity: 1;
+    }
+
+    .c-team__image {
+      background: $whiteOpasity;
+    }
+
+    .c-team__image::after {
+      opacity: 1;
+    }
+
+    .c-team__name {
+      color: $black;
+    }
+  } 
+}
+
+.c-team__info {
+  @include flex;
+  @include column;
+  @include align-center;
+  font-family: $fontSecond;
+  font-weight: $fontRegular;
+  letter-spacing: $letterSpacMd;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.c-team__image {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.c-team__image::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(255,255,255,.85);
+  opacity: 0;
+  transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+}
+
+.c-team__details {
+  opacity: 0;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  padding: 20px 23px 55px;
+  transform: translateY(-50%);
+  transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000); 
+  z-index: 4; 
+  
+  font-weight: $fontLight;
+  line-height: 1.4em;
+  font-size: 14px;
+}
+
+.c-team__greet {
+  text-transform: uppercase;
+  font-family: $fontSecond;
+  letter-spacing: $LetterSpacXs;
+  font-size: 18px;
+  margin-bottom: 1.4em;
+}
+
+.c-team__links{
+  font-size: 15px;
+  padding-top: 2em;
+  cursor: pointer;
+}
+
+.c-team__name {
+  margin-bottom: 15px;
+  font-size: 15px;
+}
+
+@media(max-width: 767px) {
+  .c-team__image {
+    margin-bottom: 0;
+  }
+
+  .c-team__info {
+    padding: 15px 0 $indentXXs;
+  }
+}

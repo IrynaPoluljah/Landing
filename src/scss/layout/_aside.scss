@@ -1,0 +1,24 @@
+.l-aside__wrap {
+  padding: $indentDefault 0;
+}
+
+.l-aside__content {
+  color: $whiteOpasity;
+  line-height: 1.7em;
+  margin-bottom: 40px;
+}
+
+.l-aside__img {
+  @include flex;
+  @include end;
+}
+
+.c-aside__photo {
+  margin-top: -32px;
+}
+
+@media(max-width: 479px) {
+  .l-aside__wrap {
+    padding: $indentXs 0;
+  }
+}

@@ -1,0 +1,36 @@
+.c-nav__link {
+  font-weight: $fontRegular;
+  font-size: 11px;
+  color: $whiteOpasity;
+  letter-spacing: $letterSpacSm;
+  text-transform: uppercase;
+    &:hover {
+      color: $white;
+    }
+}
+
+.c-nav__link + .c-nav__link {
+  margin-left: 28px;
+}
+
+@media (max-width: 767px) {
+  .c-nav {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 100%;
+    z-index: 20;
+    background-color: $black;
+    padding: 20px 0;
+  }
+
+  .c-nav__link {
+    display: block;
+    text-align: right;
+    padding: 10px 23px;
+  }
+
+  .c-nav__link + .c-nav__link {
+    margin-left: 0;
+  }
+}

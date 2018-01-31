@@ -1,0 +1,9 @@
+.l-advantagelist {
+  margin-bottom: -$indentXs;
+}
+
+@media(max-width: 767px) {
+  .l-advantagelist  {
+    margin-bottom: 0;
+  }
+}
